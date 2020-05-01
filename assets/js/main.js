@@ -31,6 +31,11 @@
     return false;
   });
 
+  $('.readmore').click(function() {
+    $(this).parent().find('.description').toggleClass('descriptionLess');
+    return false;
+  });
+
   // Initiate the wowjs animation library
   new WOW().init();
 

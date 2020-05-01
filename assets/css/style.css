@@ -92,6 +92,35 @@ h1, h2, h3, h4, h5, h6 {
   animation: animate-preloader 1s linear infinite;
 }
 
+.preloader_area {
+    position: fixed;
+    background: #fff;
+    z-index: 11000;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+.lodar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+    .lodar ul {
+        display: flex
+    }
+
+        .lodar ul li {
+            display: inline-block;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: poppins,sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            animation: animate 1.4s linear infinite
+        }
+
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -1549,4 +1578,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+.services p.descriptionLess {
+  display: block;
+  display: -webkit-box;
+  max-width: 400px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.services .bounceInUp .readmore {
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: #18d26e;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
