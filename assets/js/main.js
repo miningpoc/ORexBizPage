@@ -33,6 +33,8 @@
 
   $('.readmore').click(function() {
     $(this).parent().find('.description').toggleClass('descriptionLess');
+    var text = $(this).text() === 'Read more...' ? 'Read less...' : 'Read more...';
+    $(this).text(text);
     return false;
   });
 
